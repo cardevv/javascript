@@ -47,8 +47,13 @@ const idAudio = `#som_${instrumento}`
 
     //console.log(contador);
 
-    tecla.onkeydown = function () {
-        tecla.classList.add('ativa');
+    tecla.onkeydown = function (event) {
+
+        if (event.code === 'Space' || event.code === 'Enter'){
+
+            tecla.classList.add('ativa');
+        }
+        
         
 
 
