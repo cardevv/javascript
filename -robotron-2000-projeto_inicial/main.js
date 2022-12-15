@@ -5,6 +5,6 @@ robotron.addEventListener("click", dizOi)
 
 function dizOi(){
 
-robotron.onclick = alert
+alert("oi");
 
 }
