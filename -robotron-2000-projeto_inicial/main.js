@@ -1,5 +1,6 @@
 const  robotron = document.querySelector("#robotron");
-
+const estatisticas = document.querySelectorAll("[data-estatisticas]")
+console.log(estatisticas)
 const pecas = {
     "bracos": {
         "forca": 29,
@@ -33,8 +34,6 @@ const pecas = {
         "velocidade": -2
     }
 }
-
-
 
 const controle = document.querySelectorAll("[data-controle]")
 
