@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAM</title>
+</head>
+<body>
+    <h1> Sistema de nacionalidade</h1>
+    País: <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="verifica" onclick="verifica ()">
+
+    <div id="res">
+
+
+    </div>
+    
+</body>
+
+<script>
+ function verifica () {
+
+    var txtpais = document.querySelector('#txtpais')
+    var res = document.querySelector('#res')
+    var pais = txtpais.value
+    res.innerHTML = `vivendo em ${pais}`
+
+    if (pais == "brasil") {
+        res.innerText += ` você é brasileiro`
+
+
+    } else  {
+
+        res.innerText += ` você é estrangeiro`
+    }
+
+   
+
+ }
+
+</script>
+ <script src="main.js"></script>
+
+</html>
