@@ -1,6 +1,10 @@
-var consultaCEP = fetch('https://viacep.com.br/ws/01001020/json/')
-.then(resposta => resposta.json())
-.then(r => {
+
+
+
+
+    var consultaCEP = fetch('https://viacep.com.br/ws/01001000/json/')
+    .then(resposta => resposta.json())
+    .then(r => {
     if (r.erro) {
         throw Error('Esse cep não existe!')
 
@@ -9,7 +13,8 @@ var consultaCEP = fetch('https://viacep.com.br/ws/01001020/json/')
 
         console.log(r)
     }
-}).catch (erro => console.log(erro));
+    }).catch (erro => console.log(erro))
+    .finally(mensagem => console.log('Processo concluido'));
 
 
-console.log(consultaCEP)
+    console.log(consultaCEP)
