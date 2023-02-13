@@ -8,14 +8,10 @@ export default function ehUmCPF(campo) {
 
 
 if (validaNmrRepetidos(cpf) || validaPrimeiroDigito(cpf) || validaSegundoDigito(cpf)) {
+    
+    campo.setCustomValidity('Esse cpf não é valido')
 
-
-    console.log("Don't exist")
-
-
-} else {
-
-    console.log("Exist")
+    
 }
 
 function verificaCampo(campo) {
